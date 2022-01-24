@@ -4,14 +4,15 @@ import List from './List';
 import './App.css';
 
 function App() {
+
+  const [people, setPeople] = useState(data)
+
   return (
-    <div className="app">
       <section className="container">
         <h3>0 birthdays today</h3>
         <List />
         <button onClick={() => console.log('you clicked me')}>clear all</button>
       </section>
-    </div>
   );
 }
 
